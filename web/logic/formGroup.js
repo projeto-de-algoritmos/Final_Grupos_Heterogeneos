@@ -1,5 +1,5 @@
-const _ = require("lodash");
-const fs = require("fs");
+import _ from "lodash";
+import fs from "fs";
 
 const fields = {
   secondLanguage: ["en", "es"],

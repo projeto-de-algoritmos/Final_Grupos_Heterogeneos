@@ -1,4 +1,4 @@
-const graph = require("../graphData.json");
+import graph from "./graphData.json";
 const nodes = Object.keys(graph);
 const queue = [];
 
