@@ -23,7 +23,7 @@ export default function Groups(groups) {
       {group.map((group, index) => {
         return (
           <>
-            <p>Team {index + 1}</p>
+            <p className="title-team">Grupo {index + 1}</p>
             <GroupCard group={group} key={index} />
           </>
         );

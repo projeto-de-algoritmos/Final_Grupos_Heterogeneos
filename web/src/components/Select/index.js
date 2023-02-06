@@ -15,7 +15,8 @@ export default function SelectAnswer({
       <Controller
         control={control}
         name={name}
-        render={({ field: { onChange, ref } }) => (
+        defaultValue={[]}
+        render={({ field: { onChange, value, ref } }) => (
           <Select
             inputRef={ref}
             onChange={(val) => onChange(val.map((c) => c.value))}
@@ -24,6 +25,7 @@ export default function SelectAnswer({
             options={options}
             classNamePrefix="select"
             placeholder={placeholder}
+            value={value.map((c) => ({ value: c, label: c })) || []}
           />
         )}
       />

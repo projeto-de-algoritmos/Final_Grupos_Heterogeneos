@@ -1,34 +1,36 @@
 const idiom = [
-  { value: "en", label: "Inglês" },
-  { value: "es", label: "Espanhol" },
+  { value: "Inglês", label: "Inglês" },
+  { value: "Espanhol", label: "Espanhol" },
+  { value: "Francês", label: "Francês" },
+  { value: "Alemão", label: "Alemão" },
+  { value: "Italiano", label: "Italiano" },
+  { value: "Japonês", label: "Japonês" },
+  { value: "Chinês", label: "Chinês" },
+  { value: "Russo", label: "Russo" },
+  { value: "Coreano", label: "Coreano" },
+  { value: "Árabe", label: "Árabe" },
+  { value: "Hindi", label: "Hindi" },
 ];
 
 const programmingLanguages = [
-  { value: "javascript", label: "JavaScript" },
-  { value: "typescript", label: "TypeScript" },
-  { value: "python", label: "Python" },
-  { value: "c", label: "C" },
-  { value: "c++", label: "C++" },
-  { value: "java", label: "Java" },
-  { value: "c#", label: "C#" },
-  { value: "php", label: "PHP" },
-  { value: "go", label: "Go" },
-  { value: "rust", label: "Rust" },
-  { value: "elixir", label: "Elixir" },
+  { value: "JavaScript", label: "JavaScript" },
+  { value: "TypeScript", label: "TypeScript" },
+  { value: "Python", label: "Python" },
+  { value: "C", label: "C" },
+  { value: "C++", label: "C++" },
+  { value: "Java", label: "Java" },
+  { value: "C#", label: "C#" },
+  { value: "PHP", label: "PHP" },
+  { value: "Go", label: "Go" },
+  { value: "Rust", label: "Rust" },
+  { value: "Elixir", label: "Elixir" },
 ];
 
-const frameworks = [
-  { value: "react", label: "React" },
-  { value: "react-native", label: "React Native" },
-  { value: "angular", label: "Angular" },
-  { value: "vue", label: "Vue" },
-  { value: "flutter", label: "Flutter" },
-  { value: "node", label: "Node" },
-  { value: "django", label: "Django" },
-  { value: "laravel", label: "Laravel" },
-  { value: "spring", label: "Spring" },
-  { value: "express", label: "Express" },
-  { value: "rails", label: "Rails" },
+const knowledge = [
+  { value: "Iniciante", label: "Iniciante" },
+  { value: "Junior", label: "Junior" },
+  { value: "Pleno", label: "Pleno" },
+  { value: "Senior", label: "Senior" },
 ];
 
 const selectFields = [
@@ -39,17 +41,17 @@ const selectFields = [
     placeholder: "Selecione os idiomas que você sabe",
   },
   {
-    title: "Linguagens que você já trabalhou ?",
+    title: "Linguagem de programação favorita ?",
     name: "languages",
     options: programmingLanguages,
-    placeholder: "Selecione as linguagens que você sabe",
+    placeholder: "Linguagem de programação favorita",
   },
-  {
-    title: "Frameworks que você já trabalhou ?",
-    name: "frameworks",
-    options: frameworks,
-    placeholder: "Selecione os frameworks que você sabe",
-  },
+  // {
+  //   title: "Qual seu nível de conhecimento em programação ?",
+  //   name: "knowledge",
+  //   options: knowledge,
+  //   placeholder: " Nível de conhecimento em programação",
+  // },
 ];
 
-export { idiom, programmingLanguages, frameworks, selectFields };
+export { idiom, programmingLanguages, knowledge, selectFields };
