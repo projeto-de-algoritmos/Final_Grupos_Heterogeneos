@@ -1,18 +1,19 @@
 import React from "react";
 import "./styles.scss";
 
-// import { Container } from './styles';
-
 function PersonCard({ person }) {
   return (
-    <>
-      <p>{person.name}</p>
-      <div className="view-person-container">
-        <p>Idioma: {person.characteristics.idiom}</p>
-        <p>Linguagem: {person.characteristics.languages}</p>
-        <p>Nivel de conhecimento: {person.characteristics.knowledge}</p>
+    <div class="card text-center view-person-content">
+      <div class="card-header">{person.name}</div>
+      <div class="card-body view-person-body">
+        <p class="card-text">
+          Idiomas: {person.characteristics.idiom.join(", ")}
+        </p>
+        <p class="card-text">
+          Linguagens: {person.characteristics.languages.join(", ")}
+        </p>
       </div>
-    </>
+    </div>
   );
 }
 

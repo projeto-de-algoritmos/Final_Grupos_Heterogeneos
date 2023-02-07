@@ -36,31 +36,5 @@ export function addAndComputeParents(person) {
     }
   });
 
-  console.log(graph);
   return graph;
 }
-
-// {
-//   graph = {};
-//   // same people
-//   addAndComputeParents({
-//     name: "Person test 1",
-//     secondLanguage: ["en"],
-//     programmingLanguage: ["ts"],
-//   });
-
-//   addAndComputeParents({
-//     name: "Person test 2",
-//     secondLanguage: ["es"],
-//     programmingLanguage: ["ts"],
-//   });
-
-//   addAndComputeParents({
-//     name: "Person test 3",
-//     secondLanguage: ["es"],
-//     programmingLanguage: ["c#"],
-//   });
-//   console.log(graph);
-// }
-
-// fs.writeFileSync("./graphData.json", JSON.stringify(graph, null, 2));

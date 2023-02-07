@@ -1,17 +1,17 @@
 import "./styles.scss";
+import person from "../../assets/person.png";
 
 export default function GroupCard({ group }) {
-  const groupLen = group.length;
   return (
     <div className="group-card">
-      {group.slice(0, 5).map((member, index) => {
+      {group.map((member, index) => {
         return (
-          <p key={index} className="member-content">
-            {`${member.name} ${groupLen > index + 1 && index !== 4 ? "," : ""}`}
-          </p>
+          <div key={index} className="member-content">
+            <img className="mock-image-person" src={person} alt="person" />
+            {` ${member.name}`}
+          </div>
         );
       })}
-      {group.length > 5 && <div className="member-content">...</div>}
     </div>
   );
 }

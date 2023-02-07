@@ -30,7 +30,6 @@ export default function Form() {
   };
   const computeGraph = () => {
     if (groups.length) {
-      console.log("groups", groups);
       navigate("/groups");
     } else {
       alert("Nenhum grupo foi formado ainda");
@@ -41,7 +40,7 @@ export default function Form() {
     <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
       <div className="form-header">
         <p className="title-form">
-          Formulário de cadastro - Team Based Learning
+          Formulário de cadastro - Grupos Heterogêneos
         </p>
         <button
           to={`/groups`}

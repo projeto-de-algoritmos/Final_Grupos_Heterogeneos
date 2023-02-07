@@ -26,13 +26,6 @@ const programmingLanguages = [
   { value: "Elixir", label: "Elixir" },
 ];
 
-const knowledge = [
-  { value: "Iniciante", label: "Iniciante" },
-  { value: "Junior", label: "Junior" },
-  { value: "Pleno", label: "Pleno" },
-  { value: "Senior", label: "Senior" },
-];
-
 const selectFields = [
   {
     title: "Sabe mais algum idioma além do português ?",
@@ -41,17 +34,11 @@ const selectFields = [
     placeholder: "Selecione os idiomas que você sabe",
   },
   {
-    title: "Linguagem de programação favorita ?",
+    title: "Linguagens favoritas de programação ?",
     name: "languages",
     options: programmingLanguages,
-    placeholder: "Linguagem de programação favorita",
+    placeholder: "Linguagens favoritas de programação",
   },
-  // {
-  //   title: "Qual seu nível de conhecimento em programação ?",
-  //   name: "knowledge",
-  //   options: knowledge,
-  //   placeholder: " Nível de conhecimento em programação",
-  // },
 ];
 
-export { idiom, programmingLanguages, knowledge, selectFields };
+export { idiom, programmingLanguages, selectFields };

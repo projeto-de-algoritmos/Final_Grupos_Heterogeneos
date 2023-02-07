@@ -1,12 +1,8 @@
-.view-person-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  border-color: #1e85f7;
-  border-style: dotted;
-  width: 50%;
-  border-radius: 10px;
-  padding-left: 15px;
-  padding-top: 15px;
+.view-person-content {
+  .view-person-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }

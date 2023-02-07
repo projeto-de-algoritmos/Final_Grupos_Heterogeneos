@@ -7,15 +7,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact element={<Form />}>
-          {/* <Route path=":login" exact element={<Form />} />
-          <Route path=":login/:type" exact element={<Form />} /> */}
-        </Route>
-        <Route path="/groups" exact element={<Group />}>
-          {/* <Route path=":login/:type" exact element={<Group />} /> */}
-        </Route>
+        <Route path="/" exact element={<Form />} />
+        <Route path="/groups" exact element={<Group />} />
         <Route path="/view" exact element={<GroupView />}>
-          {/* <Route path=":login/:type" exact element={<Group />} /> */}
+          <Route path=":id" exact element={<GroupView />} />
         </Route>
       </Routes>
     </Router>

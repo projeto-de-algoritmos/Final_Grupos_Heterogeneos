@@ -3,7 +3,25 @@
   flex-direction: column;
   align-items: center;
 
-  .title-team {
-    margin-top: 35px;
+  .group-content {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex: 1;
+    // background-color: blue;
+    flex-direction: column;
+    align-items: center;
+  }
+  .label-groups {
+    margin-top: 10px;
+    width: 73%;
+    .header-group {
+      // background-color: red;
+      font-size: 1.375rem;
+    }
+    .description-group {
+      font-size: 0.875rem;
+    }
   }
 }

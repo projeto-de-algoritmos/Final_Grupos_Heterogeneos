@@ -1,23 +1,28 @@
 .group-card {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  align-content: center;
-  height: 80px;
-
-  width: 50%; // temp
+  justify-content: space-between;
+  width: 73%;
+  padding: 20px;
 
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
 
   .member-content {
-    margin-left: 10px;
+    padding: 18px;
+    text-align: center;
+    height: auto;
+    .mock-image-person {
+      border-radius: 50%;
+      width: 30px;
+    }
+  }
+  .member-content::before {
+    float: left;
+    padding-top: 40%;
   }
 }
 .group-card:hover {
-  height: 81px;
-  width: 51%;
-  background-color: grey;
+  background-color: #90e0ef;
 }

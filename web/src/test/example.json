@@ -1,0 +1,58 @@
+{
+  "G1-Person1": {
+    "characteristics": {
+      "idiom": ["Inglês"],
+      "languages": ["JavaScript", "TypeScript"]
+    },
+    "related": ["G1-Person2", "G1-Person3"]
+  },
+  "G1-Person2": {
+    "characteristics": {
+      "idiom": ["Inglês"],
+      "languages": ["JavaScript", "TypeScript"]
+    },
+    "related": ["G1-Person1", "G1-Person3"]
+  },
+  "G1-Person3": {
+    "characteristics": {
+      "idiom": ["Inglês"],
+      "languages": ["JavaScript", "TypeScript"]
+    },
+    "related": ["G1-Person1", "G1-Person2"]
+  },
+  "G2-Person1": {
+    "characteristics": {
+      "idiom": ["Espanhol"],
+      "languages": ["Python", "C"]
+    },
+    "related": ["G2-Person2", "G2-Person3", "G2-Person5"]
+  },
+  "G2-Person2": {
+    "characteristics": {
+      "idiom": ["Espanhol"],
+      "languages": ["Python", "Java"]
+    },
+    "related": ["G2-Person1", "G2-Person3", "G2-Person5"]
+  },
+  "G2-Person3": {
+    "characteristics": {
+      "idiom": ["Espanhol"],
+      "languages": ["Python", "C", "PHP"]
+    },
+    "related": ["G2-Person1", "G2-Person2", "G2-Person5"]
+  },
+  "G2-Person4": {
+    "characteristics": {
+      "idiom": ["Francês"],
+      "languages": ["Python"]
+    },
+    "related": ["G2-Person5"]
+  },
+  "G2-Person5": {
+    "characteristics": {
+      "idiom": ["Francês", "Espanhol"],
+      "languages": ["C", "Python"]
+    },
+    "related": ["G2-Person1", "G2-Person2", "G2-Person3", "G2-Person4"]
+  }
+}

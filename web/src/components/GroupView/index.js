@@ -1,47 +1,18 @@
 import React from "react";
 import PersonCard from "../PersonCard";
-
+import { useParams } from "react-router-dom";
+import { saved } from "../../logic/graph";
 import "./styles.scss";
 
-const t = [
-  {
-    name: "test",
-    characteristics: {
-      idiom: "Inglês",
-      languages: "JavaScript",
-      knowledge: "Iniciante",
-    },
-    related: ["test1", "test2"],
-  },
-  {
-    name: "test1",
-    characteristics: {
-      idiom: "Inglês",
-      languages: "TypeScript",
-      knowledge: "Junior",
-    },
-    related: ["test", "test2"],
-  },
-  {
-    name: "test2",
-    characteristics: {
-      idiom: "Inglês",
-      languages: "C",
-      knowledge: "Junior",
-    },
-    related: ["test", "test1"],
-  },
-];
-function GroupView({ group }) {
+function GroupView() {
+  let { id } = useParams();
   return (
     <div className="view-group-container">
-      {t.map((person, index) => {
+      {saved[id].map((person, index) => {
         return (
-          <PersonCard
-            className="view-person-card"
-            key={index}
-            person={person}
-          />
+          <div className="view-person-card">
+            <PersonCard key={index} person={person} />
+          </div>
         );
       })}
     </div>
