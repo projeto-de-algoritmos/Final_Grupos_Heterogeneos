@@ -4,7 +4,7 @@ const fields = ["idiom", "languages"];
 
 let graph = {};
 
-export function addAndComputeParents(person) {
+export function addAndComputeRelated(person) {
   if (graph[person.name]) return graph;
   // If not exists, create node
   graph[person.name] = {

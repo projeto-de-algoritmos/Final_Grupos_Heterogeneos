@@ -57,7 +57,7 @@ class Graph {
     // Add to current component
     component.push(node);
 
-    // Get neighbors and iterate in inverse graph
+    // Get neighbors and iterate graph
     this.getNeighbors(node).forEach((neighbor) => {
       const isVisited = visited.includes(neighbor);
       if (!isVisited) {
@@ -114,12 +114,11 @@ class Graph {
     return hydratedComponent;
   }
 
-  // SCC algorithm
   getHeterogeneousGroups() {
     // fill order
     const stack = this.getStackOrder();
 
-    // SCC and visited stores
+    // queue/groups and visited stores
     const queue = [];
     const groups = [];
     const visited = [];
@@ -128,7 +127,7 @@ class Graph {
       // get top of stack
       const node = stack.pop();
 
-      // looks for strongly connected components
+      // looks for connected components
       const isVisited = visited.includes(node);
       if (!isVisited) {
         const component = [];

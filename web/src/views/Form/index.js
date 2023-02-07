@@ -1,7 +1,7 @@
 import SelectAnswer from "../../components/Select";
 import { useForm } from "react-hook-form";
 import { selectFields } from "./options";
-import { addAndComputeParents } from "../../logic/formGroup";
+import { addAndComputeRelated } from "../../logic/formGroup";
 import { Graph } from "../../logic/graph";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +20,7 @@ export default function Form() {
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
-    const computedGraph = addAndComputeParents(data);
+    const computedGraph = addAndComputeRelated(data);
     const graphController = new Graph(computedGraph);
     const heterogeneousGroups = graphController.getHeterogeneousGroups();
     // save in state
